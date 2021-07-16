@@ -708,8 +708,8 @@ p label{
 											console.log('retorn-games');
 											console.log(obj);
 											$.each(obj, function(i) {
-												//$('#lst' + game).append('<label for="' + obj[i].Id + '"><input type="checkbox" team="'+ obj[i].OCTeam__r.TeamCode__c +'" class="addGame ' + obj[i].OCTeam__r.TeamCode__c +'" value="' + obj[i].Id + '" id="' + obj[i].Id + '" /> ' + obj[i].Name + '</label>');
-												// $('#lst' + game).append('<label for="' + obj[i].Id + '"><input type="checkbox" team="'+ obj[i].OCTeam__r.Name +'" class="addGame ' + obj[i].OCTeam__r.Name +'" value="' + obj[i].Id + '" id="' + obj[i].Id + '" /> ' + obj[i].Name + '</label>');
+												$('#lst' + game).append('<label for="' + obj[i].Id + '"><input type="checkbox" team="'+ obj[i].Team__c +'" class="addGame ' + obj[i].Team__c +'" value="' + obj[i].Id + '" id="' + obj[i].Id + '" /> ' + obj[i].Name + '</label>');
+												//$('#lst' + game).append('<label for="' + obj[i].Id + '"><input type="checkbox" team="'+ obj[i].OCTeam__r.Name +'" class="addGame ' + obj[i].OCTeam__r.Name +'" value="' + obj[i].Id + '" id="' + obj[i].Id + '" /> ' + obj[i].Name + '</label>');
 											});
 
 											$('.addGame').on('change', function() {
