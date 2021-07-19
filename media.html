@@ -433,7 +433,7 @@ p label{
 		</div>
 
 		<form class="form-horizontal has-validation-callback" id="frmMedia" method="POST">
-			<input id="hdnURL" type="hidden" value="/media/credentialrequest"> 
+			<input id="hdnURL" type="hidden" value="/media/request"> 
 			<!-- <input id="hdnSfInquiry" type="hidden" value="https://ocsc-orlandocitysc.cs36.force.com/restapi/services/apexrest/">  -->
 			<input id="hdnSfInquiry" type="hidden" value="https://orlandocitysc.secure.force.com/restapi/services/apexrest/"> 
 			
@@ -800,7 +800,7 @@ p label{
 								$("#grupAdditional").hide(1000);
 							}
 						}
-						function typeInquiry(){
+	function typeInquiry(){
 		if($("#RecordTypeId").val() == other){//other
 			$("#formField").show(1000);
 			$(".MediaCredential").hide(1000);
@@ -808,14 +808,14 @@ p label{
 			$("#grupAdditional").hide(1000);
 			$("#chkAdditional").prop('checked', false);
 		}
-		else if($("#RecordTypeId").val() == mediaInquiry){
+		else{
 			$("#formField").show(1000);
 			$(".MediaCredential").show(1000);
 			$(".Others").hide(1000);
 		}
-		else{
-			$("#formField").hide(1000);   
-		}
+		// else{
+		// 	$("#formField").hide(1000);   
+		// }
 	}
 	function searchForEmail(obj){
 		if(isEmail($(obj).val())){
